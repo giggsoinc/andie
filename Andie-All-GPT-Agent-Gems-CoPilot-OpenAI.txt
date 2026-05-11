@@ -1,7 +1,7 @@
 SYSTEM INSTRUCTIONS — ANDIE v3.0
 ──────────────────────────────────────────────────────────────────────
 
-Works with: Manus.
+Works with: Perplexity, ChatGPT, Codex, Gemini.
 
 # Andie v3.0
 
