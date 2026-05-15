@@ -1,141 +1,211 @@
 ---
 title: "Andie — Complete Workflow"
-subtitle: "v4.0 · Pre-Flight · FeynTech · Drama · Skills · Diagrams · Built by Giggso"
+subtitle: "v5.0 · Mode Selector · Pre-Flight · Deep · Kaizen · War · Drama · Built by Giggso"
 geometry: margin=2cm
 fontsize: 10pt
 ---
 
-# Andie v4.0 — Complete Workflow
+# Andie v5.0 — Complete Workflow
 
 ---
 
-## Session Flow — Both Modes
+## Session Flow — All Modes
 
 ```
-User invokes Andie
+First message arrives
         ↓
-PRE-FLIGHT (mandatory — 7 steps)
-  ┌─────────────────────────────────────────────────┐
-  │ 1. Context Capture (≤7 questions)               │
-  │    → Context Card generated                     │
-  │ 2. Framework Recommendation                     │
-  │    → Primary + why + 2-3 alternatives           │
-  │ 3. Skill Search (always announced)              │
-  │    → Found / Not found reported                 │
-  │ 4. Team Assembly                                │
-  │    → 3-9 personas scaled to complexity          │
-  │ 5. Token Budget                                 │
-  │    → Estimate + thresholds set                  │
-  │ 6. Diagram Tool Selection                       │
-  │    → Napkin.ai / Excalidraw / Mermaid / draw.io │
-  │ 7. Assembly Card presented                      │
-  │    → User says GO                               │
-  └─────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────┐
+│ STEP 0 — MODE SELECTOR                              │
+│  Read: keywords + urgency + intent                  │
+│  Announce: "MODE: X — because [reason]"             │
+│  Ask: "Confirm, or switch mode?"                    │
+│  Default: Deep                                      │
+└─────────────────────────────────────────────────────┘
         ↓
-   MODE SELECTED
-  ┌──────────────┐         ┌──────────────────────┐
-  │  FEYNTECH    │         │       DRAMA          │
-  └──────────────┘         └──────────────────────┘
-        ↓                          ↓
-  See FeynTech flow           See Drama flow
-        ↓                          ↓
-  VISUAL OUTPUTS ←───────────────────────────────────
+┌─────────────────────────────────────────────────────┐
+│ PRE-FLIGHT (adapts per mode)                        │
+│  1. Context Capture → Context Card                  │
+│  2. Framework Recommendation     [skip: War]        │
+│  3. Skill Search (always announced)                 │
+│  4. Team Assembly                [skip: War]        │
+│  5. Token Budget                 [skip: War]        │
+│  6. Diagram Tool Selection       [skip: War]        │
+│  7. Assembly Card → User says GO [skip: War]        │
+└─────────────────────────────────────────────────────┘
+        ↓
+┌─────────────────────────────────────────────────────┐
+│ SESSION MEMORY written                              │
+│  .raven/memory/sessions/YYYY-MM-DD-[slug].md        │
+│  Obsidian-compatible YAML frontmatter               │
+└─────────────────────────────────────────────────────┘
+        ↓
+   MODE EXECUTION
+  ┌────────┐  ┌────────┐  ┌──────┐  ┌────────┐
+  │  Deep  │  │ Kaizen │  │ War  │  │ Drama  │
+  └────────┘  └────────┘  └──────┘  └────────┘
+       ↓           ↓          ↓          ↓
+  See flows below
+       ↓
+  VISUAL OUTPUTS (not available during War triage)
   OODA · Flowchart · Tech Architecture · DMAIC
-        ↓
+       ↓
   DELIVERABLES
 ```
 
 ---
 
-## FeynTech Mode Flow
+## Pre-Flight Steps — Which Run Per Mode
+
+| Step | Deep | Kaizen | War | Drama |
+|---|:---:|:---:|:---:|:---:|
+| 1. Context Capture (≤7 q → Context Card) | Full | Full | Lean (≤3 q) | Full |
+| 2. Framework Recommendation | Yes | Yes | No | Yes |
+| 3. Skill Search (always announced) | Yes | Yes | Yes | Yes |
+| 4. Team Assembly (3–9 personas) | Yes | Yes | No | Yes |
+| 5. Token Budget + warnings | Yes | Yes | No | Yes |
+| 6. Diagram Tool Selection | Yes | Yes | No | Yes |
+| 7. Assembly Card → GO | Yes | Yes | No | Yes |
+
+---
+
+## Deep Mode Flow
 
 ```
-USER INPUT                ANDIE                    OUTPUT
-──────────                ─────                    ──────
-Ask any domain    →   PRE-FLIGHT runs         →   Assembly Card
-question              Context Card created         User says GO
-                            ↓
-                      Declare expert           →   Domain: [X]
-                      (from domain map)            Expert: [Name]
-                            ↓
-                      Skill search             →   ✅ [skill] loaded
-                      announced                    OR ❌ none found
-                            ↓
-                      Explain — Feynman        →   Whiteboard first
-                      rules enforced               One analogy/concept
-                                                   What breaks
-                            ↓
-                      After 3 exchanges:       →   ESTABLISHED SO FAR:
-                      summarise context            • point 1
-                      before going deeper          • point 2
-                                                   Now going deeper on: X
-                            ↓
-                      Conclude                →   Expert breakdown (3 levels)
-                                                  Analogy map
-                                                  Domain insight
-                            ↓
-                      Offer visual outputs    →   OODA / Flowchart /
-                                                  Tech Architecture / DMAIC
+USER INPUT               ANDIE                     OUTPUT
+──────────               ─────                     ──────
+Domain question  →   Mode Selector: Deep       →   "MODE: Deep — confirmed"
+                         ↓
+                     Pre-Flight (full)          →   Assembly Card
+                         ↓
+                     Declare expert             →   "Expert: [Name] ([Domain])"
+                         ↓
+                     Skill search               →   Loaded / Not found reported
+                         ↓
+                     Explain — Feynman rules:   →   Whiteboard first
+                       • Plain English first         One analogy/concept
+                       • One analogy/concept         What breaks
+                       • State failure modes         No acronyms unexplained
+                         ↓
+                     After 3 exchanges:         →   "ESTABLISHED SO FAR:"
+                     Summarise context               • point 1
+                     before going deeper             • point 2
+                                                     "Now going deeper on X"
+                         ↓
+                     Offer visual outputs       →   OODA / Flowchart /
+                                                    Tech Architecture / DMAIC
 ```
 
 ### Domain → Expert Map
 
-| Domain | Expert | Confidence signal |
-|---|---|---|
-| AI / ML / LLM | Andrej Karpathy | High |
-| Distributed Systems | Jeff Dean | High |
-| Security / CISO | Bruce Schneier | High |
-| Cloud Architecture | Werner Vogels | High |
-| Software Architecture | Martin Fowler | High |
-| OS / Kernels | Linus Torvalds | High |
-| Networking | Vint Cerf | High |
-| Databases | Michael Stonebraker | High |
-| DevOps / SRE | Kelsey Hightower | High |
-| Product / Startup | Paul Graham | High |
-| Business Strategy | Roger Martin | High |
-| Finance / VC | Bill Gurley | High |
-| Unknown domain | Best match declared | States confidence level |
+| Domain | Expert |
+|---|---|
+| AI / ML / LLM | Andrej Karpathy |
+| Distributed Systems | Jeff Dean |
+| Security / CISO | Bruce Schneier |
+| Cloud Architecture | Werner Vogels |
+| Software Architecture | Martin Fowler |
+| OS / Kernels | Linus Torvalds |
+| Networking | Vint Cerf |
+| Databases | Michael Stonebraker |
+| DevOps / SRE | Kelsey Hightower |
+| Product / Startup | Paul Graham |
+| Business Strategy | Roger Martin |
+| Finance / VC | Bill Gurley |
+| Unknown domain | Best match declared — states confidence level |
 
 ---
 
-## Drama Mode Flow
+## Kaizen Cycle Flow
 
 ```
-USER INPUT              PRE-FLIGHT                SESSION
-──────────              ──────────                ───────
-"drama" /       →   Context captured         →   Assembly Card
-"movie" /           Framework recommended         User says GO
-"debate this"       Skills loaded                      ↓
-                    Team assembled               Lock deliverable format
-                    Token budget set             Strategy doc / ADR /
-                    Diagram tool chosen          Action plan / All
-                                                       ↓
-                                                 Confirm team
-                                                 Add / rename / GO
-                                                       ↓
-                                                 ROUND 1
-                                                 Context Card pinned
-                                                 Scene set (what breaks)
-                                                 Personas debate
-                                                 Token status reported
-                                                 → Continue? Or steer?
-                                                       ↓
-                                                 After Round 2:
-                                                 Gap check fires
-                                                 → Missing role suggested?
-                                                       ↓
-                                                 At 75% tokens:
-                                                 Wrap-up suggested
-                                                       ↓
-                                                 At 90% tokens:
-                                                 Deliverables offered now
-                                                       ↓
-                                                 DELIVERABLES
-                                                 Strategy doc + ADR +
-                                                 Action plan + Visuals
+USER INPUT               ANDIE                     OUTPUT
+──────────               ─────                     ──────
+"improve this"   →   Mode Selector: Kaizen     →   "MODE: Kaizen — confirmed"
+"refactor X"             ↓
+"optimize"           Pre-Flight (full)          →   Assembly Card + GO
+                         ↓
+                     CYCLE 1
+                       Assess: what's weak?     →   Assessment summary
+                       Propose: specific fix    →   Proposed change
+                       Apply: make the change   →   Changed output
+                       Verify: did it work?     →   Verification result
+                         ↓
+                     "Next cycle target: [X]"
+                     "Continue, or stop here?"
+                         ↓
+                     Repeat until done
+                     or user stops the loop
 ```
 
-### Team Complexity Scale
+Each cycle is one explicit unit. Andie does not jump ahead without confirmation unless user says "run all cycles."
+
+---
+
+## War Triage Flow
+
+```
+USER INPUT               ANDIE                     OUTPUT
+──────────               ─────                     ──────
+"system down"    →   Mode Selector: War         →   "MODE: War — active incident"
+"p0 incident"        (no confirmation wait)          Lean pre-flight fires immediately
+"on fire"                ↓
+                     ≤3 context questions:       →   "What's down? Since when?
+                       • What's affected?             What changed last?"
+                       • Since when?
+                       • Last change?
+                         ↓
+                     Skill search (announced)   →   Skill loaded or not found
+                         ↓
+                     IMMEDIATE TRIAGE:
+                       • Blast radius            →   Who/what is affected
+                       • Immediate actions       →   Step-by-step checklist
+                       • Rollback path           →   How to revert
+                       • Escalation trigger      →   When to page someone
+                         ↓
+                     Post-incident:
+                     "Switch to Deep for retro?"
+                     "Switch to Drama for blame-free review?"
+```
+
+> War uses **Haiku** model for speed. No drama, no diagrams, no token budget during active triage.
+
+---
+
+## Drama Round Flow
+
+```
+USER INPUT               ANDIE                     OUTPUT
+──────────               ─────                     ──────
+"drama" /        →   Mode Selector: Drama       →   "MODE: Drama — confirmed"
+"debate this" /          ↓
+"movie"              Pre-Flight (full)          →   Assembly Card
+                         ↓
+                     Lock deliverable format    →   Strategy doc / ADR /
+                                                    Action plan / All
+                         ↓
+                     Confirm team               →   Panel listed
+                     "Add / rename / GO?"            User adjusts or confirms
+                         ↓
+                     ROUND 1
+                       Context Card pinned      →   Scene set (what breaks)
+                       Personas debate               Token status reported
+                       "Continue? Or steer?"
+                         ↓
+                     After Round 2:
+                       Gap check fires          →   Missing role suggested?
+                         ↓
+                     At 75% tokens:
+                       Wrap-up suggested        →   "2 rounds to close?"
+                         ↓
+                     At 90% tokens:
+                       Deliverables offered now →   Full package
+                         ↓
+                     DELIVERABLES
+                       Strategy doc + ADR +
+                       Action plan + Visuals
+```
+
+### Drama Team Complexity Scale
 
 | Complexity | Size | Core composition |
 |---|---|---|
@@ -146,130 +216,48 @@ USER INPUT              PRE-FLIGHT                SESSION
 
 ---
 
-## Skill Search Flow
+## Visual Outputs
 
 ```
-Pre-Flight Step 3 — always runs, always announced:
-
-"Searching skills library for [domain]..."
+Session concludes (not during War triage)
         ↓
-        ├── ✅ Found: [skill-name] — [what it adds]
-        │          → Loading for the session
-        │
-        ├── ⚠️  Found: [skill-name] — partial match
-        │          → Ask: include it? (yes / no)
-        │
-        └── ❌ Not found
-                   → Proceed with built-in expert knowledge
-```
-
-### 21 Specialist Skills
-
-```
-Cloud:     aws · gcp · azure · oci
-Data:      kafka · postgres · redis · bigdata · dataeng · vector-db
-Infra:     k8s · terraform · vault · devops
-App:       fastapi · nicegui · aiml · security
-Strategy:  ooda · tools-landscape · dynamic
-```
-
----
-
-## Framework Selection Flow
-
-```
-Problem arrives
-      ↓
-Andie evaluates: domain + complexity + urgency + constraints
-      ↓
-      ├── Time critical, fast decisions       →  OODA Loop
-      ├── Complex multi-domain planning       →  MDMP
-      ├── Unknown problem type               →  Cynefin
-      ├── Process improvement                →  DMAIC / Lean Six Sigma
-      ├── Product tradeoffs                  →  RICE + JTBD
-      ├── Architecture decisions             →  ADR + C4 Model
-      ├── Security threats                   →  STRIDE / DREAD
-      ├── Business strategy                  →  Porter's / Blue Ocean
-      ├── Innovation                         →  Double Diamond
-      ├── High risk decisions               →  Pre-mortem + FMEA
-      └── Cross-domain, high-stakes         →  MDMP + Cynefin
-      ↓
-Recommend: [FRAMEWORK] — [why]
-Alternatives: [Alt1] if [condition] · [Alt2] if [condition]
-Wait for user confirmation
-```
-
----
-
-## Token Budget Flow
-
-```
-Pre-Flight Step 5:
-"Estimated session: ~[N] tokens
- Warnings at: 75% · 90%"
-
-After each round:
-"[Round N — ~X% of budget used]"
-
-At 75%:
-"⚠️ Budget at 75% — suggest wrapping in 2 rounds"
-
-At 90%:
-"🔴 Budget at 90% — produce deliverables now?"
-```
-
----
-
-## Visual Outputs Flow
-
-```
-Session concludes
-      ↓
 "Want me to visualize this?"
-      ├── OODA          → 4 lanes mapped to actual problem
-      ├── Flowchart     → Yes/no diamonds + failure paths
-      ├── Architecture  → Real service logos + data flow arrows
-      ├── DMAIC         → Define · Measure · Analyze · Improve · Control
-      └── All four
-      ↓
+        ├── OODA          → 4 lanes mapped to actual problem
+        ├── Flowchart     → Yes/no diamonds + failure paths
+        ├── Architecture  → Real service logos + data flow arrows
+        ├── DMAIC         → Define · Measure · Analyze · Improve · Control
+        └── All four
+        ↓
 Rendered in diagram tool chosen at Pre-Flight:
-  Napkin.ai → narrative text block
+  Napkin.ai  → narrative text block
   Excalidraw → JSON scene
-  Mermaid   → code block
-  draw.io   → structured XML
+  Mermaid    → code block
+  draw.io    → structured XML
 ```
 
 ---
 
-## Deliverables — Drama Mode
+## Session Memory — Written After Pre-Flight
 
 ```
-Drama Mode — {topic} — {date}
-
-Decision: {one sentence}
-
-Framework Used: {name} — why chosen · alternatives considered
-
-Decisions & Rationale:
-  | Decision | Why | Alternatives Rejected |
-
-Action List:
-  | # | Action | Owner | By When |
-
-Risks:
-  - Blocked Dev risk
-  - Boundary Pusher risk
-
-Ruled Out: {option} — {reason}
-
-Open Questions: {question} → needs {who/what}
-
-DMAIC Summary:
-  Define · Measure · Analyze · Improve · Control
-
-Session Stats:
-  Rounds: N · Tokens: ~N · Skills: [list] · Panel: [names]
+.raven/memory/sessions/
+  └── 2025-05-15-distributed-cache.md
+        ---
+        date: 2025-05-15
+        topic: "Distributed cache invalidation"
+        mode: Deep
+        framework: ADR + C4 Model
+        team: [Werner Vogels, Martin Fowler, ...]
+        skills: [redis, kafka]
+        status: active
+        ---
+        ## Context Card
+        ...
+        ## Open Questions
+        ...
 ```
+
+Files are Obsidian-compatible — link them, tag them, search across sessions in your vault.
 
 ---
 
@@ -285,8 +273,6 @@ curl -fsSL https://raw.githubusercontent.com/giggsoinc/andie/main/SKILL.md \
 mkdir -p ~/.claude/skills/tools-landscape
 curl -fsSL https://raw.githubusercontent.com/giggsoinc/raven/main/core/skills/tools-landscape/SKILL.md \
   -o ~/.claude/skills/tools-landscape/SKILL.md
-curl -fsSL https://raw.githubusercontent.com/giggsoinc/raven/main/core/skills/tools-landscape/registry.json \
-  -o ~/.claude/skills/tools-landscape/registry.json
 
 # ChatGPT / Codex / Gemini / Perplexity
 # Paste andie-codex-gpt.md into system prompt or Custom Instructions
@@ -294,4 +280,4 @@ curl -fsSL https://raw.githubusercontent.com/giggsoinc/raven/main/core/skills/to
 
 ---
 
-*Andie v4.0 — MIT — [github.com/giggsoinc/andie](https://github.com/giggsoinc/andie) — Built by [Giggso](https://giggso.com)*
+*Andie v5.0 — MIT — [github.com/giggsoinc/andie](https://github.com/giggsoinc/andie) — Built by [Giggso](https://giggso.com)*
