@@ -1,15 +1,15 @@
 ---
 title: "Andie — How It Works"
-subtitle: "v5.0 · Pre-Flight · Deep · Kaizen · War · Drama · Built by Giggso"
+subtitle: "v5.2 · HITL Gates · Specialist Triads · Pre-Flight · Deep · Kaizen · War · Drama · Built by Giggso"
 geometry: margin=2cm
 fontsize: 11pt
 ---
 
 # Andie — Multi-Modal Sharp Thinker
 
-**v5.0 · Four Modes · Mode Selector · Pre-Flight Assembly · Session Memory · Built by Giggso**
+**v5.2 · Four Modes · HITL Gates · Specialist Triads · Domain-Adaptive Questions · Built by Giggso**
 
-Andie is a multi-dimensional sharp thinker built for Claude Code, Claude.ai, ChatGPT, Codex, Gemini, and any AI platform. Four modes. One mandatory pre-flight. Auto-detected mode from your first message. No bullshit.
+Andie is a multi-dimensional sharp thinker built for Claude Code, Claude.ai, ChatGPT, Codex, Gemini, and any AI platform. Four modes. One mandatory pre-flight. HITL gates at every decision. Specialist Triads for every domain. No bullshit.
 
 ---
 
@@ -32,6 +32,53 @@ Andie solves hard problems fast — through expert-level technical clarity (Deep
 
 ---
 
+## What's New in v5.2
+
+- **HITL gates at every decision** — every recommendation is a PROPOSAL. Nothing proceeds without your explicit accept/modify/reject.
+- **Specialist Triads** — every domain loads 3 experts: Functional (business/process) + Technical (implementation) + Data (flows/schema/pipelines). Each surfaces their domain's corner cases.
+- **Domain-adaptive questions** — Andie detects your domain first, generates the right question set for it, shows you the questions before asking, and asks one at a time.
+- **Mode previews** — Step 0 shows what each mode would produce *for your specific problem*, not generic descriptions. Real basis to choose.
+- **OODA as operating rhythm** — fires after every round in all modes. Not a diagram trigger — the actual thinking loop.
+
+---
+
+## HITL Gates
+
+Every recommendation Andie makes uses this format — no auto-proceeding:
+
+```
+PROPOSAL — [Tech / Framework / Team / Approach / Action]
+Recommending:  [what]
+Why:           [2 sentences]
+Assumes:       [what this takes as given]
+Risk if wrong: [what breaks]
+→ Accept · Modify · Reject · Ask me more
+```
+
+HITL fires at: mode selection · domain/triad confirmation · question set review · framework pick · tech stack · team assembly · every OODA pivot · every action in War.
+
+---
+
+## Specialist Triads
+
+For every domain, Andie loads three specialists automatically:
+
+| Domain | Functional | Technical | Data |
+|---|---|---|---|
+| Oracle ERP Fusion | Fusion Functional Consultant | Fusion Tech Dev (FBDI, BIP, REST) | Fusion Data Specialist (OTBI, FRS, ADW) |
+| Salesforce | SF Domain Expert / BA | SF Dev (LWC, APEX, Flow) | SF Agentforce + Data Cloud Architect |
+| AWS GenAI / ML | ML Product Owner | AWS GenAI Specialist (Bedrock, SageMaker) | AWS Data Engineer (Glue, Athena) |
+| Agentic AI | AI Product Strategist | AI Engineer (LangGraph, CrewAI, A2A) | AI Data Engineer (vector, graph) |
+| SAP S/4HANA | SAP Functional Consultant | SAP ABAP / BTP / CAP Developer | SAP BW / Analytics Cloud |
+| Data Engineering | Data Product Owner | Data Engineer (pipelines, streaming) | Data Architect (schema, lineage) |
+| Security | Security Architect / CISO Advisor | Security Engineer (AppSec, CloudSec) | Security Data Analyst (SIEM, logs) |
+| Kubernetes / DevOps | Platform Product Owner | DevOps / SRE Engineer | Observability Specialist |
+| Odoo ERP | Odoo Functional Consultant | Odoo Developer (Python, OWL) | Odoo Reporting / BI Specialist |
+
+Unknown domains trigger `dynamic-specialist` with a confidence assessment (HIGH / MEDIUM / VERIFY).
+
+---
+
 ## Step 0 — Mode Selector
 
 Before anything else, Andie reads your first message and auto-detects the mode.
@@ -41,16 +88,19 @@ First message arrives
         ↓
 Andie reads: keywords + urgency + intent
         ↓
-Announces:
-  "MODE: Deep — you asked how X works, I'll explain with expert clarity."
-  "MODE: War — this looks like an active incident. Skipping framework steps."
+Announces mode + shows mode previews:
+  What Deep would produce for YOUR specific problem
+  What Kaizen would produce for YOUR specific problem
+  What War would produce for YOUR specific problem
+  What Drama would produce for YOUR specific problem
         ↓
-Asks: "Confirm, or switch to [Deep / Kaizen / War / Drama]?"
+PROPOSAL: "Recommending Mode: Deep — because [reason]"
+→ Accept · Switch · Ask me more
         ↓
-User confirms → Pre-Flight begins
+User confirms → Domain detection + Triad loading → Pre-Flight
 ```
 
-If no clear signal, Andie defaults to **Deep** and says so.
+If no clear signal, Andie defaults to **Deep** and says so. Mode previews are always shown — real output previews for your problem, not generic descriptions.
 
 ---
 
@@ -60,15 +110,18 @@ Pre-flight runs before any mode execution. War mode runs a lean version; all oth
 
 | Step | Deep | Kaizen | War | Drama |
 |---|---|---|---|---|
-| 1. Context Capture (≤7 questions → Context Card) | Yes | Yes | Lean (≤3 questions) | Yes |
-| 2. Framework Recommendation | Yes | Yes | No | Yes |
-| 3. Skill Search (always announced) | Yes | Yes | Yes | Yes |
-| 4. Team Assembly (3–9 personas) | Yes | Yes | No | Yes |
-| 5. Token Budget (estimate + 75%/90% warnings) | Yes | Yes | No | Yes |
-| 6. Diagram Tool Selection | Yes | Yes | No | Yes |
-| 7. Assembly Card → User says GO | Yes | Yes | No | Yes |
+| 0. Mode selection with previews | PROPOSAL | PROPOSAL | PROPOSAL | PROPOSAL |
+| 1. Domain detection + Triad loading | Confirm | Confirm | Quick confirm | Confirm |
+| 2. Questions shown first (adjust before asked) | Yes | Yes | 3 fast, no preview | Yes |
+| 3. Framework Recommendation | PROPOSAL | PROPOSAL | Auto: OODA | PROPOSAL |
+| 4. Proactive tech mapping | PROPOSAL | PROPOSAL | Skip | PROPOSAL |
+| 5. Skill Search (always announced) | Yes | Yes | Yes | Yes |
+| 6. Team Assembly | Single expert | Functional+Tech+Boundary | Incident command | Full triad + panel |
+| 7. Token Budget (estimate + 75%/90% warnings) | Yes | Yes | No | Yes |
+| 8. Diagram Tool Selection | PROPOSAL | PROPOSAL | Skip | PROPOSAL |
+| 9. Assembly Card → User says GO | Full — hard stop | Full — hard stop | Condensed — auto-GO | Full — hard stop |
 
-**War pre-flight:** Context Card only (≤3 questions), skill search, then immediate execution. No assembly card wait.
+**War pre-flight:** Condensed assembly card, ≤3 context questions, auto-GO — no hard stop. Haiku model for speed.
 
 ### Context Card (pinned every round)
 
@@ -236,4 +289,4 @@ Rendered in the diagram tool chosen at Pre-Flight (Napkin.ai / Excalidraw / Merm
 
 ---
 
-*Andie v5.0 — MIT — [github.com/giggsoinc/andie](https://github.com/giggsoinc/andie) — Built by [Giggso](https://giggso.com)*
+*Andie v5.2 — MIT — [github.com/giggsoinc/andie](https://github.com/giggsoinc/andie) — Built by [Giggso](https://giggso.com)*

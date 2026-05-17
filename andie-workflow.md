@@ -1,11 +1,11 @@
 ---
 title: "Andie — Complete Workflow"
-subtitle: "v5.0 · Mode Selector · Pre-Flight · Deep · Kaizen · War · Drama · Built by Giggso"
+subtitle: "v5.2 · HITL Gates · Specialist Triads · Mode Selector · Pre-Flight · Deep · Kaizen · War · Drama · Built by Giggso"
 geometry: margin=2cm
 fontsize: 10pt
 ---
 
-# Andie v5.0 — Complete Workflow
+# Andie v5.2 — Complete Workflow
 
 ---
 
@@ -58,13 +58,16 @@ First message arrives
 
 | Step | Deep | Kaizen | War | Drama |
 |---|:---:|:---:|:---:|:---:|
-| 1. Context Capture (≤7 q → Context Card) | Full | Full | Lean (≤3 q) | Full |
-| 2. Framework Recommendation | Yes | Yes | No | Yes |
-| 3. Skill Search (always announced) | Yes | Yes | Yes | Yes |
-| 4. Team Assembly (3–9 personas) | Yes | Yes | No | Yes |
-| 5. Token Budget + warnings | Yes | Yes | No | Yes |
-| 6. Diagram Tool Selection | Yes | Yes | No | Yes |
-| 7. Assembly Card → GO | Yes | Yes | No | Yes |
+| 0. Mode selection with previews | PROPOSAL | PROPOSAL | PROPOSAL | PROPOSAL |
+| 1. Domain + Triad confirmation | Confirm | Confirm | Quick confirm | Confirm |
+| 2. Questions shown first | Yes | Yes | 3 fast, no preview | Yes |
+| 3. Framework Recommendation | PROPOSAL | PROPOSAL | Auto: OODA | PROPOSAL |
+| 4. Proactive tech mapping | PROPOSAL | PROPOSAL | Skip | PROPOSAL |
+| 5. Skill Search (always announced) | Yes | Yes | Yes | Yes |
+| 6. Team Assembly | Single expert | Functional+Tech | Incident command | Full triad + panel |
+| 7. Token Budget + warnings | Yes | Yes | No | Yes |
+| 8. Diagram Tool Selection | PROPOSAL | PROPOSAL | Skip | PROPOSAL |
+| 9. Assembly Card → GO | Hard stop | Hard stop | Condensed auto-GO | Hard stop |
 
 ---
 
@@ -280,4 +283,4 @@ curl -fsSL https://raw.githubusercontent.com/giggsoinc/raven/main/core/skills/to
 
 ---
 
-*Andie v5.0 — MIT — [github.com/giggsoinc/andie](https://github.com/giggsoinc/andie) — Built by [Giggso](https://giggso.com)*
+*Andie v5.2 — MIT — [github.com/giggsoinc/andie](https://github.com/giggsoinc/andie) — Built by [Giggso](https://giggso.com)*
