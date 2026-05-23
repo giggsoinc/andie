@@ -1,7 +1,7 @@
 {
   "name": "andie",
-  "description": "Multi-modal sharp thinker for Claude Code. Deep mode (expert clarity), Drama mode (expert panel debate), Triage mode (war strategy for your crisis), Kaizen mode (continuous improvement). Routes to the right domain expert. Always wins.",
-  "version": "5.2.0",
+  "description": "Compact plan-first Andie for Claude Code. Routes complex work, preserves HITL and OODA, hands brownfield bugs to Andie Jr, and hands off executable plans to specialists.",
+  "version": "6.0.0",
   "author": {
     "name": "Giggso Inc",
     "url": "https://github.com/giggsoinc"
