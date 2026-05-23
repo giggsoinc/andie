@@ -1,11 +1,11 @@
 ---
 title: "Andie — Complete Workflow"
-subtitle: "v5.2 · HITL Gates · Specialist Triads · Mode Selector · Pre-Flight · Deep · Kaizen · War · Drama · Built by Giggso"
+subtitle: "v6.1 · Plan Mode Gate · HITL Gates · Specialist Triads · Mode Selector · Pre-Flight · Deep · Kaizen · War · Drama · Multi-Platform · Built by Giggso"
 geometry: margin=2cm
 fontsize: 10pt
 ---
 
-# Andie v5.2 — Complete Workflow
+# Andie v6.1 — Complete Workflow
 
 ---
 
@@ -13,6 +13,11 @@ fontsize: 10pt
 
 ```
 First message arrives
+        ↓
+┌─────────────────────────────────────────────────────┐
+│ EnterPlanMode (ALWAYS FIRST)                        │
+│  Plan presented → user approves → execution begins  │
+└─────────────────────────────────────────────────────┘
         ↓
 ┌─────────────────────────────────────────────────────┐
 │ STEP 0 — MODE SELECTOR                              │

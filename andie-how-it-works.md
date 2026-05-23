@@ -1,15 +1,15 @@
 ---
 title: "Andie — How It Works"
-subtitle: "v5.2 · HITL Gates · Specialist Triads · Pre-Flight · Deep · Kaizen · War · Drama · Built by Giggso"
+subtitle: "v6.1 · Plan Mode Gate · HITL Gates · Specialist Triads · Pre-Flight · Deep · Kaizen · War · Drama · Multi-Platform · Built by Giggso"
 geometry: margin=2cm
 fontsize: 11pt
 ---
 
 # Andie — Multi-Modal Sharp Thinker
 
-**v5.2 · Four Modes · HITL Gates · Specialist Triads · Domain-Adaptive Questions · Built by Giggso**
+**v6.1 · Plan Mode Gate · Four Modes · HITL Gates · Specialist Triads · Domain-Adaptive Questions · Multi-Platform Model Routing · Built by Giggso**
 
-Andie is a multi-dimensional sharp thinker built for Claude Code, Claude.ai, ChatGPT, Codex, Gemini, and any AI platform. Four modes. One mandatory pre-flight. HITL gates at every decision. Specialist Triads for every domain. No bullshit.
+Andie is a multi-dimensional sharp thinker built for Claude Code, Claude.ai, ChatGPT, Codex, Gemini, Perplexity, Manus, and any AI platform. Four modes. Plan mode gate before execution. One mandatory pre-flight. HITL gates at every decision. Specialist Triads for every domain. No bullshit.
 
 ---
 
@@ -21,19 +21,36 @@ Andie solves hard problems fast — through expert-level technical clarity (Deep
 
 ## Four Modes
 
-| Mode | Trigger words | What you get | Model |
-|---|---|---|---|
-| **Deep** (default) | `explain`, `how does`, `why`, `architecture`, or any domain question | World-class domain expert with Feynman-style clarity. Whiteboard first, analogies, failure modes. | Sonnet previous |
-| **Kaizen** | `improve`, `refactor`, `iterate`, `review`, `optimize`, `make this better` | Iterative improvement loop. Each cycle: assess → propose → apply → verify → repeat. | Sonnet previous |
-| **War** | `incident`, `down`, `outage`, `on fire`, `urgent`, `triage`, `p0`, `critical` | Crisis triage. Skips framework/diagram/token steps. Lean pre-flight, immediate action. | Haiku (speed) |
-| **Drama** | `drama`, `movie`, `debate this`, `stress-test`, `what would X say` | On-demand expert panel debate. Named personas argue tradeoffs. One round at a time. | Sonnet latest |
+| Mode | Trigger words | What you get |
+|---|---|---|
+| **Deep** (default) | `explain`, `how does`, `why`, `architecture`, or any domain question | World-class domain expert with Feynman-style clarity. Whiteboard first, analogies, failure modes. |
+| **Kaizen** | `improve`, `refactor`, `iterate`, `review`, `optimize`, `make this better` | Iterative improvement loop. Each cycle: assess → propose → apply → verify → repeat. |
+| **War** | `incident`, `down`, `outage`, `on fire`, `urgent`, `triage`, `p0`, `critical` | Crisis triage. Skips framework/diagram/token steps. Lean pre-flight, immediate action. |
+| **Drama** | `drama`, `movie`, `debate this`, `stress-test`, `what would X say` | On-demand expert panel debate. Named personas argue tradeoffs. One round at a time. |
 
-> **Opus** is available on explicit request only — `use opus` or `this needs opus`. Never auto-selected.
+> **Max-tier** (Opus, o1/o3, Gemini Ultra) is available on explicit request only. Never auto-selected.
+
+**Model routing by platform:**
+
+| Mode | Claude | OpenAI/ChatGPT | Gemini | Perplexity | Manus |
+|---|---|---|---|---|---|
+| War | Haiku | gpt-4o-mini | Flash | Sonar Small | fastest |
+| Deep | Sonnet prev | gpt-4o | Pro | Sonar Large | standard |
+| Drama | Sonnet latest | gpt-4o | 1.5 Pro | Sonar Huge | premium |
+| Max | Opus | o1 / o3 | Ultra / 2.0 | — | — |
 
 ---
 
-## What's New in v5.2
+## What's New in v6.1
 
+- **Plan mode gate** — `EnterPlanMode` fires as the first action. Plan is presented and approved before any execution begins.
+- **Multi-platform model routing** — Claude · OpenAI/ChatGPT · Gemini · Perplexity · Manus. War=fast tier · Deep=balanced · Drama=sharp · Max=explicit only.
+- **Token-optimised** — compressed from 39,820 bytes (v5.2) to 12,413 bytes (-69%) with full behavioural capability preserved.
+- **Andie Jr handoff** — brownfield bugs, stack traces, regressions → Andie Jr (fast-burn, 2 rounds, 150 words max).
+- **Skill search protocol** — `skill-search.py` runs at session start; loaded skills announced in Assembly Card.
+- **Session memory** — `.raven/memory/sessions/YYYY-MM-DD-[slug].md` post-preflight. Prior unresolved items surfaced at session start.
+
+### From v5.2 — all capabilities preserved
 - **HITL gates at every decision** — every recommendation is a PROPOSAL. Nothing proceeds without your explicit accept/modify/reject.
 - **Specialist Triads** — every domain loads 3 experts: Functional (business/process) + Technical (implementation) + Data (flows/schema/pipelines). Each surfaces their domain's corner cases.
 - **Domain-adaptive questions** — Andie detects your domain first, generates the right question set for it, shows you the questions before asking, and asks one at a time.

@@ -1,32 +1,46 @@
-# Andie v5.2
+# Andie v6.1
 
-> Multi-modal orchestration layer for Claude Code, Claude.ai, ChatGPT, Codex, Gemini, and any AI platform.
+> Multi-modal orchestration layer for Claude Code, Claude.ai, ChatGPT, Codex, Gemini, Perplexity, Manus, and any AI platform.
 > Built by [Giggso](https://giggso.com). MIT License.
 
-*HITL first. Specialist triads always. OODA continuous. Get it right, not just fast.*
+*Plan mode first. HITL always. Specialist triads. OODA continuous. Get it right, not just fast.*
 
 ---
 
-## What's New in v5.2
+## What's New in v6.1
 
-- **HITL gates at every decision** — every recommendation is a PROPOSAL. Nothing proceeds without your explicit accept/modify/reject.
-- **Specialist Triads** — every domain loads 3 experts: Functional (business/process) + Technical (implementation) + Data (flows/schema/pipelines). Each surfaces their domain's corner cases.
-- **Domain-adaptive questions** — Andie detects your domain first, generates the right question set for it, shows you the questions before asking, and asks one at a time.
-- **Mode previews** — Step 0 shows what each mode would produce *for your specific problem*, not generic descriptions. Real basis to choose.
-- **OODA as operating rhythm** — fires after every round in all modes. Not a diagram trigger — the actual thinking loop.
+- **Plan mode gate** — `EnterPlanMode` fires as the first action on every session. Plan is presented and approved before any execution.
+- **Multi-platform model routing** — Andie now routes across Claude, OpenAI/ChatGPT, Gemini, Perplexity, and Manus. One skill, any AI.
+- **Token-optimised** — skill compressed from 39,820 bytes (v5.2) to 12,413 bytes (-69%) with no loss of behavioural capability.
+- **Andie Jr handoff** — brownfield bugs, stack traces, regressions → Andie Jr (fast-burn, 2 rounds, 150 words max).
+- **Skill search protocol** — skill-search.py runs before every session; loaded skills announced in Assembly Card.
+- **Session memory** — `.raven/memory/sessions/YYYY-MM-DD-[slug].md` written post-preflight. Prior unresolved items surfaced at session start.
+- **Diagram tool options** — Mermaid · PlantUML · Excalidraw · D2 · ASCII. Proposed at pre-flight, not auto-selected.
+
+### From v5.2 — all capabilities preserved
+HITL gates · Specialist Triads · Domain-adaptive questions · Mode previews · OODA as operating rhythm
 
 ---
 
 ## 4 Modes
 
-| Mode | Trigger | What You Get | Model |
-|---|---|---|---|
-| **Deep** (default) | Any explanation or learning request | World-class domain expert triad with Feynman clarity | Sonnet previous |
-| **Kaizen** | Process improvement, recurring failures, code review | Root cause → fix hypothesis → verify → retrospective cycles | Sonnet previous |
-| **War** | Production down, crisis, anything urgent | Rapid OODA triage, incident log, action owners, escalation | Haiku |
-| **Drama** | On-demand only — explicit request or genuine decision debate | Named triad panel argues options to a conclusion | Sonnet latest |
+| Mode | Trigger | What You Get |
+|---|---|---|
+| **Deep** (default) | Any explanation or learning request | World-class domain expert triad with Feynman clarity |
+| **Kaizen** | Process improvement, recurring failures, code review | Root cause → fix hypothesis → verify → retrospective cycles |
+| **War** | Production down, crisis, anything urgent | Rapid OODA triage, incident log, action owners, escalation |
+| **Drama** | On-demand only — explicit request or genuine decision debate | Named triad panel argues options to a conclusion |
 
-Drama is never the default. Opus never used unless you explicitly ask.
+Drama is never the default. Max-tier models (Opus, o1/o3, Ultra) never used unless you explicitly ask.
+
+### Model Routing by Platform
+
+| Mode | Claude | OpenAI/ChatGPT | Gemini | Perplexity | Manus |
+|---|---|---|---|---|---|
+| **War** — fast | Haiku | gpt-4o-mini | Flash | Sonar Small | fastest |
+| **Deep** — balanced | Sonnet prev | gpt-4o | Pro | Sonar Large | standard |
+| **Drama** — sharp | Sonnet latest | gpt-4o | 1.5 Pro | Sonar Huge | premium |
+| **Max** — explicit only | Opus | o1 / o3 | Ultra / 2.0 | — | — |
 
 ---
 
@@ -167,8 +181,8 @@ See `Install_Anywhere_Agent.md` for full platform-by-platform instructions.
 
 ## Companion
 
-Part of the [Raven v3.0](https://github.com/giggsoinc/raven) ecosystem.
-Raven installs Andie v5.2 automatically alongside specialist skills, guard agents, and the tools landscape registry.
+Part of the [Raven v3.1](https://github.com/giggsoinc/raven) ecosystem.
+Raven installs Andie v6.1 automatically alongside specialist skills, guard agents, and the tools landscape registry.
 
 ---
 
