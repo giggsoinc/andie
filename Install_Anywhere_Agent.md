@@ -1,6 +1,6 @@
-# Andie v5.0 — Install on Any AI Platform
+# Andie v6.2 — Install on Any AI Platform
 
-> Multi-modal orchestration layer. Four modes: **Deep** (expert clarity), **Kaizen** (iterative improvement), **War** (crisis triage), **Drama** (expert panel debate — on demand).
+> Multi-modal orchestration layer. Four modes: **Deep** (📘 teacher at whiteboard), **Kaizen** (🔄 improvement detective), **War** (🚨 incident commander), **Drama** (🎭 writers' room debate with named characters).
 > Free. Open source. MIT license.
 
 **GitHub:** [github.com/giggsoinc/andie](https://github.com/giggsoinc/andie)
@@ -27,7 +27,7 @@ All files available at: **github.com/giggsoinc/andie**
 2. Open [claude.ai](https://claude.ai)
 3. Go to **Settings → Skills → Upload**
 4. Select `andie.skill`
-5. Andie auto-detects your mode from your first message — or say `deep`, `war`, `kaizen`, `drama`
+5. Andie announces the mode card before starting — or say `deep`, `war`, `kaizen`, `drama`
 
 ---
 
@@ -36,12 +36,12 @@ All files available at: **github.com/giggsoinc/andie**
 **One-line install (recommended):**
 ```bash
 mkdir -p ~/.claude/skills/andie && curl -fsSL \
-  https://raw.githubusercontent.com/giggsoinc/andie/main/SKILL.md \
+  https://raw.githubusercontent.com/giggsoinc/andie/main/skills/andie/SKILL.md \
   -o ~/.claude/skills/andie/SKILL.md
 ```
 
 **Manual install:**
-1. Download `SKILL.md` from the repo
+1. Download `skills/andie/SKILL.md` from the repo
 2. Copy to `~/.claude/skills/andie/SKILL.md`
 3. Open Claude Code — Andie is available in every project
 
@@ -56,7 +56,7 @@ mkdir -p ~/.claude/skills/andie && curl -fsSL \
 3. Go to **Profile → Customize ChatGPT → Custom Instructions**
 4. Paste the full file contents into the **"How would you like ChatGPT to respond?"** field
 5. Click **Save**
-6. Andie auto-detects your mode — or say `deep`, `war`, `kaizen`, `drama`
+6. Andie announces the mode card — or say `deep`, `war`, `kaizen`, `drama`
 
 ---
 
@@ -68,7 +68,7 @@ mkdir -p ~/.claude/skills/andie && curl -fsSL \
 cp ~/Downloads/Andie-All-GPT-Agent-Gems-CoPilot-OpenAI.txt .codex/instructions.md
 ```
 3. Or paste into Codex custom instructions in the app
-4. Andie auto-detects your mode — or say `deep`, `war`, `kaizen`, `drama`
+4. Andie announces the mode card — or say `deep`, `war`, `kaizen`, `drama`
 
 ---
 
@@ -131,51 +131,73 @@ cp ~/Downloads/Andie-All-GPT-Agent-Gems-CoPilot-OpenAI.txt .github/copilot-instr
 
 ---
 
-## How to activate
+## How it works (v6.2)
 
-Andie reads your first message and **auto-selects the mode**. You'll see:
+Andie reads your first message and **announces the mode with a visible card**:
 
 ```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ANDIE — MODE SELECTED
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Mode:    Deep
-  Why:     You're asking for an explanation of X
-  Alternatives: Kaizen · War · Drama
-  Proceed, or switch?
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 MODE: Deep | DOMAIN: Authentication | TIER: Sonnet
+WHY: You're asking to understand JWT token flow — pure learning, no decision
+GOAL: Explain JWT refresh token architecture
+TRIAD: Product Owner · Backend Engineer · Security Analyst
+DELIVERABLE: Understanding plan with mental model and edge cases
 ```
 
-You can also trigger a mode explicitly:
+You confirm or switch. Andie never starts silently.
+
+### Mode triggers
 
 | Say this | Mode | What happens |
 |---|---|---|
-| `deep` or just ask | **Deep** | Expert explains anything — whiteboard clarity, Feynman rules |
-| `kaizen` / `improve` / `keeps breaking` | **Kaizen** | Root cause → fix → verify cycles, 7 wastes scan |
-| `war` / `triage` / `crisis` / `urgent` | **War** | Rapid triage, incident log, action owners, battle plan |
-| `drama` / `panel` / `debate` | **Drama** | Expert panel debates your decision — on demand only |
-| `movie` | **Drama** | Alias for drama |
-| `war zone` / `factory` | War / Kaizen | Aliases |
+| `deep` or just ask a question | **📘 Deep** | Teacher at whiteboard — Feynman clarity, layered rounds |
+| `kaizen` / `improve` / `keeps breaking` | **🔄 Kaizen** | Improvement detective — evidence chains, before/after, numbered cycles |
+| `war` / `triage` / `urgent` / `down` | **🚨 War** | Incident commander — T+minutes, imperative voice, action owners |
+| `drama` / `panel` / `debate` / `compare` | **🎭 Drama** | Writers' room — named characters argue in first person by name |
 
-**Drama is never auto-triggered.** It only activates on explicit request or when Andie detects a genuine multi-stakeholder decision.
+### Tiebreaker rules (v6.2)
+
+- Comparing options or making a choice → **Drama**, not Deep
+- Something broken or degrading → **Kaizen**, not Deep
+- "Urgent", "down", "broken now" → **War**, not Deep
+- Deep is ONLY for pure understanding with no decision embedded
 
 ---
 
 ## What you get
 
-**Deep** — expert explains anything with Feynman clarity. One analogy per concept. Devil's Advocate challenge. Context depth checkpoints so nothing is lost after 3 levels.
+**📘 Deep** — teacher at whiteboard. Feynman analogies, builds simple to complex, names the "aha" moment. Each round peels one layer deeper.
 
-**Kaizen** — root cause (5 Whys or 7 wastes), fix hypothesis, verify criteria, retrospective. One improvement at a time. Never overwhelmed.
+**🔄 Kaizen** — improvement detective. Numbered investigation cycles with evidence chains. Before/after framing. Methodical and evidence-driven.
 
-**War** — rapid triage (what's down, blast radius, who knows), running incident log, action assignments with time offsets, escalation path. Auto-transitions to Kaizen when stable.
+**🚨 War** — incident commander. Short, direct sentences. T+minutes timestamps. Numbered action steps with owners. Calm-urgent, no filler.
 
-**Drama** — named expert panel. Commander, Red Team, Intel, Logistics, Anarchist, Saboteur (for War-adjacent debates) or domain specialists. One round at a time. Pre-Document Gate before any deliverable is written.
+**🎭 Drama** — writers' room debate. Named characters speak in first person (e.g., "**Kelsey:** *We're trading latency for...*"). Characters disagree with each other by name. Sharp, opinionated, professional.
 
-**All modes:**
-- Mode announced before anything else
+**All modes (v6.2):**
+- Mode card announced before anything else — with reasoning, domain, deliverable
+- Goal locked at pre-flight, progress scored each round
+- EXIT GATE produces deliverable when goal is met — no infinite loops
+- Session ends with: "✅ SESSION COMPLETE" + deliverable + decision count + handoff
 - Pre-flight adapts to mode (War skips framework/diagram steps)
 - Documents never auto-generated — findings shown first, confirmation required
-- Context Card pinned every round
+
+---
+
+## Session goal lock (new in v6.2)
+
+Andie tracks progress toward your stated goal each round:
+
+```
+PROGRESS: 60% — auth flow mapped, edge cases identified | REMAINING: token rotation strategy
+```
+
+When the goal is met, Andie produces the mode-specific deliverable and stops:
+
+```
+✅ SESSION COMPLETE — Deliverable: Architecture Decision Record | Decisions: 3 | Handoff: backend-specialist
+```
+
+No more infinite OODA loops.
 
 ---
 

@@ -306,4 +306,4 @@ Rendered in the diagram tool chosen at Pre-Flight (Napkin.ai / Excalidraw / Merm
 
 ---
 
-*Andie v5.2 — MIT — [github.com/giggsoinc/andie](https://github.com/giggsoinc/andie) — Built by [Giggso](https://giggso.com)*
+*Andie v6.2 — MIT — [github.com/giggsoinc/andie](https://github.com/giggsoinc/andie) — Built by [Giggso](https://giggso.com)*

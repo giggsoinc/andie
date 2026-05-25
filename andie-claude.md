@@ -812,4 +812,4 @@ Render in the diagram tool selected at pre-flight.
 
 ---
 
-*That's Andie v5.0. Mode first. Pre-flight. Then get shit done.*
+*That's Andie v6.2. Mode first. Pre-flight. Then get shit done.*
