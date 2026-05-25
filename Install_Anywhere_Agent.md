@@ -174,11 +174,14 @@ You confirm or switch. Andie never starts silently.
 **🎭 Drama** — writers' room debate. Named characters speak in first person (e.g., "**Kelsey:** *We're trading latency for...*"). Characters disagree with each other by name. Sharp, opinionated, professional.
 
 **All modes (v6.2):**
+- **200-word cap** — one idea per round, fully absorbed before the next
+- **Feynman recap** — "📌 Here is what we learnt:" after every round (100–150 words)
+- **HITL tells you what to do** — "⏸ APPROVAL NEEDED" with "→ Say go/modify/skip"
+- **OODA shows progress** — mandatory PROGRESS line before every cycle
 - Mode card announced before anything else — with reasoning, domain, deliverable
 - Goal locked at pre-flight, progress scored each round
 - EXIT GATE produces deliverable when goal is met — no infinite loops
 - Session ends with: "✅ SESSION COMPLETE" + deliverable + decision count + handoff
-- Pre-flight adapts to mode (War skips framework/diagram steps)
 - Documents never auto-generated — findings shown first, confirmation required
 
 ---

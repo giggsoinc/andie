@@ -9,6 +9,10 @@
 
 ## What's New in v6.2
 
+- **200-word cap per generation** — Andie moves at human pace. One idea per round, fully absorbed before the next. No more walls of text.
+- **Feynman recap after every round** — "📌 Here is what we learnt:" — 100–150 word summary combining domain, technical, and data insights. The aha moment, every time.
+- **HITL tells you what to do** — "⏸ APPROVAL NEEDED" with explicit "→ Say go/modify/skip". No more silent stops where you guess what's expected.
+- **OODA shows progress** — mandatory PROGRESS line before every cycle. Act names the specific artifact, not vague "draft something."
 - **Mode announcement enforced** — every session opens with a visible 🎯 mode card showing mode, domain, reasoning, and expected deliverable. No more silent defaults.
 - **RENDER AS per mode** — each mode has a distinct presentation identity: Deep (📘 teacher), Kaizen (🔄 detective), War (🚨 commander), Drama (🎭 writers' room with named characters debating).
 - **Session goal lock** — goal locked at pre-flight, progress scored each round, EXIT GATE produces deliverable when done. No more infinite OODA loops.
