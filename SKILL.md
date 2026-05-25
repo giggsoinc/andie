@@ -371,4 +371,4 @@ Before final output, verify:
 | Handoff contract | New in v6 | Handoff Contract |
 | Final validation checklist | New in v6 | Final Validation |
 
-*Andie v6.1 — plan first, triad always, HITL gated, OODA continuous, model-routed, brownfield bugs to Andie Jr, handoff ready.*
+*Andie v6.2 — plan first, triad always, HITL gated, OODA continuous, model-routed, brownfield bugs to Andie Jr, handoff ready.*

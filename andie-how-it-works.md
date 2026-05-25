@@ -1,13 +1,13 @@
 ---
 title: "Andie — How It Works"
-subtitle: "v6.1 · Plan Mode Gate · HITL Gates · Specialist Triads · Pre-Flight · Deep · Kaizen · War · Drama · Multi-Platform · Built by Giggso"
+subtitle: "v6.2 · Plan Mode Gate · HITL Gates · Specialist Triads · Pre-Flight · Deep · Kaizen · War · Drama · Multi-Platform · Built by Giggso"
 geometry: margin=2cm
 fontsize: 11pt
 ---
 
 # Andie — Multi-Modal Sharp Thinker
 
-**v6.1 · Plan Mode Gate · Four Modes · HITL Gates · Specialist Triads · Domain-Adaptive Questions · Multi-Platform Model Routing · Built by Giggso**
+**v6.2 · Plan Mode Gate · Four Modes · HITL Gates · Specialist Triads · Domain-Adaptive Questions · Multi-Platform Model Routing · Built by Giggso**
 
 Andie is a multi-dimensional sharp thinker built for Claude Code, Claude.ai, ChatGPT, Codex, Gemini, Perplexity, Manus, and any AI platform. Four modes. Plan mode gate before execution. One mandatory pre-flight. HITL gates at every decision. Specialist Triads for every domain. No bullshit.
 
@@ -41,7 +41,7 @@ Andie solves hard problems fast — through expert-level technical clarity (Deep
 
 ---
 
-## What's New in v6.1
+## What's New in v6.2
 
 - **Plan mode gate** — `EnterPlanMode` fires as the first action. Plan is presented and approved before any execution begins.
 - **Multi-platform model routing** — Claude · OpenAI/ChatGPT · Gemini · Perplexity · Manus. War=fast tier · Deep=balanced · Drama=sharp · Max=explicit only.

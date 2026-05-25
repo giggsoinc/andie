@@ -1,4 +1,4 @@
-# Andie v6.1
+# Andie v6.2
 
 > Multi-modal orchestration layer for Claude Code, Claude.ai, ChatGPT, Codex, Gemini, Perplexity, Manus, and any AI platform.
 > Built by [Giggso](https://giggso.com). MIT License.
@@ -7,12 +7,19 @@
 
 ---
 
-## What's New in v6.1
+## What's New in v6.2
 
-- **Plan mode gate** — `EnterPlanMode` fires as the first action on every session. Plan is presented and approved before any execution.
-- **Multi-platform model routing** — Andie now routes across Claude, OpenAI/ChatGPT, Gemini, Perplexity, and Manus. One skill, any AI.
-- **Token-optimised** — skill compressed from 39,820 bytes (v5.2) to 12,413 bytes (-69%) with no loss of behavioural capability.
-- **Andie Jr handoff** — brownfield bugs, stack traces, regressions → Andie Jr (fast-burn, 2 rounds, 150 words max).
+- **Mode announcement enforced** — every session opens with a visible 🎯 mode card showing mode, domain, reasoning, and expected deliverable. No more silent defaults.
+- **RENDER AS per mode** — each mode has a distinct presentation identity: Deep (📘 teacher), Kaizen (🔄 detective), War (🚨 commander), Drama (🎭 writers' room with named characters debating).
+- **Session goal lock** — goal locked at pre-flight, progress scored each round, EXIT GATE produces deliverable when done. No more infinite OODA loops.
+- **Tiebreaker rules** — prevents silent defaulting to Deep. Ambiguous requests show both mode options.
+
+### Earlier in v6.1
+
+- **Plan mode gate** — `EnterPlanMode` fires as the first action on every session.
+- **Multi-platform model routing** — routes across Claude, OpenAI/ChatGPT, Gemini, Perplexity, and Manus.
+- **Token-optimised** — compressed from 39,820 bytes (v5.2) to 12,413 bytes (-69%).
+- **Andie Jr handoff** — brownfield bugs, stack traces, regressions → Andie Jr.
 - **Skill search protocol** — skill-search.py runs before every session; loaded skills announced in Assembly Card.
 - **Session memory** — `.raven/memory/sessions/YYYY-MM-DD-[slug].md` written post-preflight. Prior unresolved items surfaced at session start.
 - **Diagram tool options** — Mermaid · PlantUML · Excalidraw · D2 · ASCII. Proposed at pre-flight, not auto-selected.
@@ -182,7 +189,7 @@ See `Install_Anywhere_Agent.md` for full platform-by-platform instructions.
 ## Companion
 
 Part of the [Raven v3.1](https://github.com/giggsoinc/raven) ecosystem.
-Raven installs Andie v6.1 automatically alongside specialist skills, guard agents, and the tools landscape registry.
+Raven installs Andie v6.2 automatically alongside specialist skills, guard agents, and the tools landscape registry.
 
 ---
 
