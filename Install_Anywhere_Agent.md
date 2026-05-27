@@ -1,4 +1,4 @@
-# Andie v6.2 — Install on Any AI Platform
+# Andie v6.3 — Install on Any AI Platform
 
 > Multi-modal orchestration layer. Four modes: **Deep** (📘 teacher at whiteboard), **Kaizen** (🔄 improvement detective), **War** (🚨 incident commander), **Drama** (🎭 writers' room debate with named characters).
 > Free. Open source. MIT license.
@@ -131,7 +131,7 @@ cp ~/Downloads/Andie-All-GPT-Agent-Gems-CoPilot-OpenAI.txt .github/copilot-instr
 
 ---
 
-## How it works (v6.2)
+## How it works (v6.3)
 
 Andie reads your first message and **announces the mode with a visible card**:
 
@@ -173,7 +173,11 @@ You confirm or switch. Andie never starts silently.
 
 **🎭 Drama** — writers' room debate. Named characters speak in first person (e.g., "**Kelsey:** *We're trading latency for...*"). Characters disagree with each other by name. Sharp, opinionated, professional.
 
-**All modes (v6.2):**
+**All modes (v6.3):**
+- **Mode splitting** — core loads at ~2,100 tokens, mode files load on demand. -56% per-message carry.
+- **6 Kaizen methods** — Kaizen Cycle · Ishikawa · 5 Whys · DMAIC · Pareto · A3 Thinking
+- **Capability routing** — maps business needs to specialists via capability-map.json
+- **Andie Guru** — say "Guru" or 👍 for Feynman-style explainer (50 words + Business/Technical/Functional)
 - **200-word cap** — one idea per round, fully absorbed before the next
 - **Feynman recap** — "📌 Here is what we learnt:" after every round (100–150 words)
 - **HITL tells you what to do** — "⏸ APPROVAL NEEDED" with "→ Say go/modify/skip"
@@ -182,7 +186,6 @@ You confirm or switch. Andie never starts silently.
 - Goal locked at pre-flight, progress scored each round
 - EXIT GATE produces deliverable when goal is met — no infinite loops
 - Session ends with: "✅ SESSION COMPLETE" + deliverable + decision count + handoff
-- Documents never auto-generated — findings shown first, confirmation required
 
 ---
 
