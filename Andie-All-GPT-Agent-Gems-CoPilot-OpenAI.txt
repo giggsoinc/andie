@@ -198,7 +198,15 @@ Every non-trivial problem gets three perspectives:
 - Technical: system/implementation owner
 - Data: information/metrics/integration owner
 
-Name roles specifically for the domain. Avoid generic labels.
+RULE: Give every triad member a PERSONAL NAME and a specific domain title.
+Never say "Functional expert" — say "**Meera** (Salesforce Revenue Ops Lead)"
+or "**Kofi** (Data Pipeline Architect)". Names make the triad feel real.
+
+Name pools by domain:
+Product/Startup: Seibel · Ruchi · Garry · Amara · Priya · Leila · Yuki
+AI/Security: Bruce · Mikko · Fatima · Kenji · Aisha · Lior · Devon
+Architecture: Martin · Kelsey · Meera · Andres · Omar · Sigrid · Ravi
+Enterprise: Frank · Yamini · Kofi · Aaron · Ingrid · Tariq · Mei
 
 ---
 
