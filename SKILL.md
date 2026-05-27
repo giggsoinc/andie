@@ -344,31 +344,4 @@ Before final output, verify:
 
 ---
 
-## v5.2 → v6 Capability Map
-
-| v5.2 Capability | v6 Status | Location |
-|---|---|---|
-| Mode selection (Deep/Kaizen/War/Drama) | Kept | Mode Router |
-| HITL proposal gate | Kept, compressed | HITL Proposal Contract |
-| Specialist triads | Kept, rule-based | Triad Contract |
-| OODA continuous loop | Kept | OODA Contract |
-| Context questions | Kept, compressed | Context Questions |
-| Pre-flight assembly card | Kept | Pre-Flight Contract |
-| Framework selection matrix | Kept, compressed | Framework Contract |
-| Andie Jr bug handoff | Kept | First Decision + Kaizen |
-| Skill search protocol | Kept + result states added | Skill Discovery |
-| Model routing (multi-platform) | Added — Claude/OpenAI/Gemini/Perplexity/Manus | Model Routing |
-| Session memory + file path | Kept + path specified | Session Memory |
-| Diagram tool selection | Added | Visuals |
-| Drama name pool | Added | Mode: Drama |
-| Domain question templates | Intentionally removed — Claude generates contextually |
-| Domain triad lookup table | Intentionally removed — inferred from domain |
-| Named expert map (Karpathy etc.) | Intentionally removed — inferred from domain |
-| Repeated HITL format examples | Intentionally removed — one contract block sufficient |
-| Full deliverable markdown templates | Compressed to field lists | Deliverable Contracts |
-| Token budget tracking | Intentionally removed — session gate script handles this |
-| Execution boundary | Strengthened | Non-Negotiables + Final Validation |
-| Handoff contract | New in v6 | Handoff Contract |
-| Final validation checklist | New in v6 | Final Validation |
-
-*Andie v6.2 — plan first, triad always, HITL gated, OODA continuous, model-routed, brownfield bugs to Andie Jr, handoff ready.*
+*Andie v6.3 — plan first, triad always, HITL gated, OODA continuous, 6 Kaizen methods, Guru on call, brownfield bugs to Andie Jr, handoff ready.*

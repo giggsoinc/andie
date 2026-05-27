@@ -154,7 +154,7 @@ You confirm or switch. Andie never starts silently.
 | `war` / `triage` / `urgent` / `down` | **🚨 War** | Incident commander — T+minutes, imperative voice, action owners |
 | `drama` / `panel` / `debate` / `compare` | **🎭 Drama** | Writers' room — named characters argue in first person by name |
 
-### Tiebreaker rules (v6.2)
+### Tiebreaker rules (v6.3)
 
 - Comparing options or making a choice → **Drama**, not Deep
 - Something broken or degrading → **Kaizen**, not Deep
@@ -189,7 +189,7 @@ You confirm or switch. Andie never starts silently.
 
 ---
 
-## Session goal lock (new in v6.2)
+## Session goal lock (new in v6.3)
 
 Andie tracks progress toward your stated goal each round:
 

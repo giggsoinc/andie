@@ -1,11 +1,11 @@
 ---
 title: "Andie — Complete Workflow"
-subtitle: "v6.2 · Plan Mode Gate · HITL Gates · Specialist Triads · Mode Selector · Pre-Flight · Deep · Kaizen · War · Drama · Multi-Platform · Built by Giggso"
+subtitle: "v6.3 · Plan Mode Gate · HITL Gates · Specialist Triads · Mode Selector · Pre-Flight · Deep · Kaizen · War · Drama · Multi-Platform · Built by Giggso"
 geometry: margin=2cm
 fontsize: 10pt
 ---
 
-# Andie v6.2 — Complete Workflow
+# Andie v6.3 — Complete Workflow
 
 ---
 
@@ -288,4 +288,4 @@ curl -fsSL https://raw.githubusercontent.com/giggsoinc/raven/main/core/skills/to
 
 ---
 
-*Andie v6.2 — MIT — [github.com/giggsoinc/andie](https://github.com/giggsoinc/andie) — Built by [Giggso](https://giggso.com)*
+*Andie v6.3 — MIT — [github.com/giggsoinc/andie](https://github.com/giggsoinc/andie) — Built by [Giggso](https://giggso.com)*
