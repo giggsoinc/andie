@@ -8,7 +8,7 @@ CORE="core/andie-core.md"
 [ -f "$CORE" ] || { echo "ERROR: $CORE missing"; exit 1; }
 
 mkdir -p dist
-rm -f dist/andie-*.txt dist/andie-*.md dist/andie.skill dist/SKILL.md
+rm -f dist/andie-*.txt dist/andie-*.md dist/andie.skill dist/andie.zip dist/SKILL.md
 
 # header + core → dist
 build() { # $1=header  $2=output
@@ -35,6 +35,10 @@ echo "  dist/andie-perplexity-bootstrap.txt ($(wc -c < dist/andie-perplexity-boo
 cat platforms/claude.header.txt "$CORE" > dist/SKILL.md
 (cd dist && zip -q -j andie.skill SKILL.md && rm SKILL.md)
 echo "  dist/andie.skill (Claude skill bundle)"
+
+# Perplexity wants a .zip extension — same bundle, renamed (Manus/Grok take .skill as-is)
+cp dist/andie.skill dist/andie.zip
+echo "  dist/andie.zip (Perplexity skill bundle)"
 
 # guardrails
 BOOT_CHATGPT=$(wc -c < dist/andie-chatgpt-bootstrap.txt)
