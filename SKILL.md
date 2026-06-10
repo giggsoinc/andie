@@ -75,6 +75,8 @@ Every triad has:
 
 RULE: Name roles specifically for the domain. Avoid generic labels when domain is clear.
 
+RULE: Every team — any mode — includes at least one CRITIC voice (Devil's Advocate, Anarchist, Saboteur, or Red Team) who challenges the emerging answer every round, AND the USER as a named seat: each round surfaces "→ Your call: {the one question only the user can answer}". The user holds the casting vote; the panel never decides over their head.
+
 STOP: Ask the user to adjust the triad only when role choice materially changes the plan.
 
 ## Context Questions
