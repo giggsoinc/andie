@@ -48,7 +48,7 @@ Andie solves hard problems fast — through expert-level technical clarity (Deep
 - **Token-optimised** — compressed from 39,820 bytes (v5.2) to 12,413 bytes (-69%) with full behavioural capability preserved.
 - **Andie Jr handoff** — brownfield bugs, stack traces, regressions → Andie Jr (fast-burn, 2 rounds, 150 words max).
 - **Skill search protocol** — `skill-search.py` runs at session start; loaded skills announced in Assembly Card.
-- **Session memory** — `.raven/memory/sessions/YYYY-MM-DD-[slug].md` post-preflight. Prior unresolved items surfaced at session start.
+- **Session memory** — `.andie/memory/sessions/YYYY-MM-DD-[slug].md` post-preflight. Prior unresolved items surfaced at session start.
 
 ### From v5.2 — all capabilities preserved
 - **HITL gates at every decision** — every recommendation is a PROPOSAL. Nothing proceeds without your explicit accept/modify/reject.
@@ -163,7 +163,7 @@ Pre-flight runs before any mode execution. War mode runs a lean version; all oth
 
 After pre-flight completes, Andie writes a session memory file:
 
-- **Path:** `.raven/memory/sessions/YYYY-MM-DD-[topic-slug].md`
+- **Path:** `.andie/memory/sessions/YYYY-MM-DD-[topic-slug].md`
 - **Format:** Obsidian-compatible Markdown with YAML frontmatter
 - **Contains:** Context Card, mode, framework, team, open questions
 - **Purpose:** Resumable sessions, cross-session context, Obsidian vault search

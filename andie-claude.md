@@ -655,10 +655,10 @@ One round. Stop. Never auto-continue.
 
 ### At session start
 
-Check `.raven/memory/sessions/` for recent notes on the same topic or domain:
+Check `.andie/memory/sessions/` for recent notes on the same topic or domain:
 
 ```bash
-ls .raven/memory/sessions/ 2>/dev/null | tail -10
+ls .andie/memory/sessions/ 2>/dev/null | tail -10
 ```
 
 If found:
@@ -677,10 +677,10 @@ If loaded: surface open questions and prior decisions. Don't re-ask what was alr
 Write checkpoint immediately:
 
 ```bash
-mkdir -p .raven/memory/sessions/
+mkdir -p .andie/memory/sessions/
 ```
 
-Write to `.raven/memory/sessions/YYYY-MM-DD-{topic-slug}.md`:
+Write to `.andie/memory/sessions/YYYY-MM-DD-{topic-slug}.md`:
 
 ```markdown
 ---

@@ -25,7 +25,7 @@ RULE: Before choosing a mode, decide whether this belongs in Andie at all.
 
 HANDOFF:
 - Brownfield bug/debug/regression/error/stack trace/not working -> `andie-jr`.
-- Security review/threat/vulnerability/CVE -> `raven-security` or `security-specialist`.
+- Security review/threat/vulnerability/CVE -> `security-specialist` (or any installed security skill).
 - Unknown platform/domain requiring expertise -> `dynamic-specialist`.
 - Tool/platform selection -> include `tools-landscape`.
 - Pure implementation after a plan is accepted -> relevant specialist skill.
@@ -152,7 +152,7 @@ RULE: If the needed expertise is not already loaded, say what skill would help a
 PROCESS:
 - Search only after user approval when installing or adding new capabilities.
 - Do not silently install anything.
-- If an existing Raven specialist fits, hand off directly.
+- If an installed specialist skill fits, hand off directly.
 
 RESULT STATES:
 - Found: name skill, explain fit, propose loading. STOP.
@@ -169,11 +169,11 @@ HANDOFF OUTPUT:
 
 RULE: Preserve continuity without bloating the prompt.
 
-FILE: `.raven/memory/sessions/YYYY-MM-DD-{topic-slug}.md`
+FILE: `.andie/memory/sessions/YYYY-MM-DD-{topic-slug}.md`
 WRITE: mode, domain, triad, goal, constraint, framework, decisions, open questions, carry-forward.
 
 AT START:
-- Check `.raven/memory/sessions/` for prior sessions on this topic. If found, propose loading. STOP.
+- Check `.andie/memory/sessions/` for prior sessions on this topic. If found, propose loading. STOP.
 - Summarize only decisions, unresolved questions, and constraints.
 
 DURING:

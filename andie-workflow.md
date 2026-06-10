@@ -40,7 +40,7 @@ First message arrives
         ↓
 ┌─────────────────────────────────────────────────────┐
 │ SESSION MEMORY written                              │
-│  .raven/memory/sessions/YYYY-MM-DD-[slug].md        │
+│  .andie/memory/sessions/YYYY-MM-DD-[slug].md        │
 │  Obsidian-compatible YAML frontmatter               │
 └─────────────────────────────────────────────────────┘
         ↓
@@ -248,7 +248,7 @@ Rendered in diagram tool chosen at Pre-Flight:
 ## Session Memory — Written After Pre-Flight
 
 ```
-.raven/memory/sessions/
+.andie/memory/sessions/
   └── 2025-05-15-distributed-cache.md
         ---
         date: 2025-05-15
@@ -279,7 +279,7 @@ curl -fsSL https://raw.githubusercontent.com/giggsoinc/andie/main/SKILL.md \
 
 # Tools Landscape (recommended)
 mkdir -p ~/.claude/skills/tools-landscape
-curl -fsSL https://raw.githubusercontent.com/giggsoinc/raven/main/core/skills/tools-landscape/SKILL.md \
+curl -fsSL https://raw.githubusercontent.com/giggsoinc/andie/main/skills/tools-landscape/SKILL.md \
   -o ~/.claude/skills/tools-landscape/SKILL.md
 
 # ChatGPT / Codex / Gemini / Perplexity

@@ -108,10 +108,11 @@ See `Install_Anywhere_Agent.md` for full platform-by-platform instructions.
 
 ---
 
-## Companion
+## Standalone, by design
 
-Part of the [Raven v4](https://github.com/giggsoinc/raven) ecosystem.
-Raven installs Andie v6.3 automatically alongside 61 specialist skills, guard agents, domain packs, and the tools landscape registry.
+Andie runs on its own — no other framework required. It works as a self-contained skill on Claude, ChatGPT, Gemini, Perplexity, and Manus, storing its session memory under `.andie/`.
+
+Larger systems can embed Andie as their thinking layer. [Raven v4](https://github.com/giggsoinc/raven) does exactly this: it installs Andie (plus andie-jr, andie-frames, andie-guru) alongside its own specialist skills and guard agents. Andie never depends on Raven — the dependency points the other way.
 
 ---
 
