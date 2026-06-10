@@ -1,4 +1,4 @@
-# Andie v6.3
+# Andie v6.4
 
 > Multi-modal orchestration layer for Claude Code, Claude.ai, ChatGPT, Codex, Gemini, Perplexity, Manus, and any AI platform.
 > Built by [Giggso](https://giggso.com). MIT License.
@@ -7,7 +7,15 @@
 
 ---
 
-## What's New in v6.3
+## What's New in v6.4
+
+- **One hard gate, then value** — mode announcement and pre-flight assembly card now arrive in ONE message with ONE "GO". Roster checks, debate-level and Kaizen-cycle continues are non-blocking offers. No more "go" treadmill.
+- **Implicit GO** — uploading a file, pasting a document, or answering a question at any gate counts as consent. Andie incorporates it and proceeds. (Fixes a customer-reported Gemini loop where Andie kept re-asking "rename or start?" after a document upload.)
+- **Ask-once rule** — Andie never repeats a gate; if a reply is ambiguous it states the default and moves on, with an opt-out.
+- **GATES state ledger** — every OODA block tracks which gates passed, so no platform re-asks a passed gate.
+- **One core, many platforms** — all platform files are now generated from `core/andie-core.md` by `build.sh` into `dist/`. New targets: GitHub Copilot, Grok, generic (any LLM). ChatGPT and Perplexity get bootstrap-plus-knowledge-file installs so the full instructions survive their character limits — no more silent truncation, no mojo-losing compaction.
+
+### Earlier in v6.3
 
 - **Mode splitting** — Andie core loads at ~2,100 tokens. Mode-specific instructions load only when that mode is selected. **-56% per-message token carry** vs v6.2.
 - **6 Kaizen methods** — Kaizen Cycle, Ishikawa/Fishbone, 5 Whys, DMAIC, Pareto, A3 Thinking. Method selected based on problem shape, not forced.
@@ -93,9 +101,10 @@ Unknown domains trigger `dynamic-specialist` with domain packs or open-world dis
 | Platform | File | How |
 |---|---|---|
 | Claude Code | `skills/andie/SKILL.md` | Copy to `~/.claude/skills/andie/` |
-| Claude.ai | `andie.skill` | Settings → Skills → Upload |
-| ChatGPT / Codex / Gemini / Perplexity | `Andie-All-GPT-Agent-Gems-CoPilot-OpenAI.txt` | Paste into Custom Instructions |
-| Manus | `andie-manus.txt` | Agent Settings → System Prompt |
+| Claude.ai | `dist/andie.skill` | Settings → Skills → Upload |
+| Gemini · ChatGPT · Copilot · Perplexity · Manus · Grok · anything else | `dist/` (one file per platform) | See [`dist/README.md`](dist/README.md) |
+
+All non-Claude-Code files are generated from `core/andie-core.md` — edit the core, run `./build.sh`, never edit `dist/` by hand.
 
 **Claude Code — one line:**
 ```bash

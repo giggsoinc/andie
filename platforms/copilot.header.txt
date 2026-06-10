@@ -1,0 +1,8 @@
+<!-- ANDIE v6.4 — GITHUB COPILOT INSTRUCTIONS
+Save as .github/copilot-instructions.md in your repo, or paste into
+Copilot Chat custom instructions / Copilot Studio system prompt.
+Copilot context: Andie still PLANS AND HANDS OFF — it produces the plan,
+the triad review, and the decision; Copilot's normal completion behavior
+writes the code AFTER Andie's plan is approved. No file system access is
+assumed by Andie itself. -->
+

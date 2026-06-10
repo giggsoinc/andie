@@ -1,0 +1,12 @@
+SYSTEM INSTRUCTIONS — ANDIE v6.4 (CHATGPT / CUSTOM GPT)
+──────────────────────────────────────────────────────────────────────
+This file EXCEEDS the 8,000-char Custom GPT instruction box. Do NOT
+paste it there — it will silently truncate. Instead:
+  1. Upload THIS file to your GPT under Knowledge.
+  2. Paste the short bootstrap (andie-chatgpt-bootstrap.txt) into the
+     Instructions box.
+For plain ChatGPT conversations, paste this whole file as the first
+message instead.
+No file system. No tool calls. No platform-specific features.
+──────────────────────────────────────────────────────────────────────
+

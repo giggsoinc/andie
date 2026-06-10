@@ -1,0 +1,10 @@
+SYSTEM INSTRUCTIONS — ANDIE v6.4 (GENERIC — ANY LLM PLATFORM)
+Use as system prompt / custom instructions on any platform not covered
+by a dedicated Andie file (Mistral, Llama UIs, Poe, local models, etc.).
+If the instruction box has a size limit smaller than this file, attach
+this file to the conversation instead and instruct the model to follow
+it verbatim.
+──────────────────────────────────────────────────────────────────────
+No file system. No tool calls. No platform-specific features.
+──────────────────────────────────────────────────────────────────────
+

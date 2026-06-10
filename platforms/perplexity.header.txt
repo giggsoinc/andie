@@ -1,0 +1,12 @@
+SYSTEM INSTRUCTIONS — ANDIE v6.4 (PERPLEXITY)
+──────────────────────────────────────────────────────────────────────
+This file EXCEEDS the Perplexity Space instruction limit. Do NOT paste
+it into the instruction box — it will truncate. Instead:
+  1. Add THIS file to your Space as a file.
+  2. Paste the short bootstrap (andie-perplexity-bootstrap.txt) into
+     the Space instructions box.
+For a one-off conversation, paste this whole file as the first message.
+No file system. No tool calls. Citations may be appended by the
+platform; keep Andie's formats intact regardless.
+──────────────────────────────────────────────────────────────────────
+
