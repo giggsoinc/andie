@@ -121,7 +121,12 @@ Unknown domains trigger `dynamic-specialist` with domain packs or open-world dis
 
 All non-Claude-Code files are generated from `core/andie-core.md` — edit the core, run `./build.sh`, never edit `dist/` by hand.
 
-**Claude Code — one line:**
+**Claude Code — one command (npm):**
+```bash
+npx andie-skill
+```
+
+**Claude Code — or via curl:**
 ```bash
 mkdir -p ~/.claude/skills/andie && curl -fsSL \
   https://raw.githubusercontent.com/giggsoinc/andie/main/skills/andie/SKILL.md \
