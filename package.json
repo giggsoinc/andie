@@ -1,0 +1,35 @@
+{
+  "name": "andie-skill",
+  "version": "6.4.0",
+  "description": "Disciplined thinking skill for people who build with AI. Four playbooks — teach, debate, firefight, root-cause — in your LLM.",
+  "bin": {
+    "andie-skill": "bin/install.js"
+  },
+  "scripts": {
+    "postinstall": "node bin/install.js || true"
+  },
+  "keywords": [
+    "ai",
+    "reasoning",
+    "thinking",
+    "decision-making",
+    "claude-code",
+    "agent-skill",
+    "kaizen",
+    "debate"
+  ],
+  "homepage": "https://github.com/giggsoinc/andie",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giggsoinc/andie.git"
+  },
+  "author": "Giggso Inc (https://giggso.com)",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "skills/",
+    "dist/",
+    "SKILL.md",
+    "README.md"
+  ]
+}

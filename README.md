@@ -1,9 +1,24 @@
 # Andie v6.4
 
-> Multi-modal orchestration layer for Claude Code, Claude.ai, ChatGPT, Codex, Gemini, Perplexity, Manus, and any AI platform.
+> **Disciplined thinking skill for people who build with AI.**
+> Four playbooks — teach, debate, firefight, root-cause — in your LLM.
+
+> Runs on Claude Code, Claude.ai, ChatGPT, Codex, Gemini, Perplexity, Manus, and any AI platform.
 > Built by [Giggso](https://giggso.com). MIT License.
 
-*Plan mode first. HITL always. Specialist triads. OODA continuous. Get it right, not just fast.*
+*You don't ship code without review. Stop shipping decisions without it.* Andie runs the playbook the pros actually use — pedagogy, structured debate, incident command, Six Sigma — with a triad of named experts, an adversary in the room, human-in-the-loop gates, and an OODA loop that won't quit until you have a decision. Plan first. Get it right, not just fast.
+
+### Who it's for
+
+Solo builders, technical founders, and AI-native operators who make high-stakes calls without a co-founder, a board, or a war room to pressure-test them. Andie is that room — in your terminal.
+
+### Why it's different
+
+| | Hands you | You walk away with |
+|---|---|---|
+| A virtual eng team (e.g. gstack) | Builders | Code |
+| An LLM council / panel | Voters | Opinions |
+| **Andie** | **A discipline** | **A decision — reviewed, challenged, gated, shipped** |
 
 ---
 

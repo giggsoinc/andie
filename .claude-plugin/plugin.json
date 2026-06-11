@@ -1,11 +1,13 @@
 {
   "name": "andie",
-  "description": "Compact plan-first Andie for Claude Code. Routes complex work, preserves HITL and OODA, hands brownfield bugs to Andie Jr, and hands off executable plans to specialists.",
-  "version": "6.0.0",
+  "description": "Disciplined thinking skill for people who build with AI. Four playbooks — teach (Deep), debate (Drama), firefight (War), root-cause (Kaizen) — with named expert triads, HITL gates, and continuous OODA. Get it right, not just fast.",
+  "version": "6.4.0",
+  "license": "MIT",
   "author": {
     "name": "Giggso Inc",
     "url": "https://github.com/giggsoinc"
   },
   "homepage": "https://github.com/giggsoinc/andie",
-  "keywords": ["ai", "expert", "debate", "strategy", "kaizen", "thinking", "decision-making", "productivity"]
+  "repository": "https://github.com/giggsoinc/andie",
+  "keywords": ["ai", "reasoning", "thinking", "decision-making", "debate", "kaizen", "six-sigma", "incident-command", "claude-code", "agent-skill", "productivity"]
 }
