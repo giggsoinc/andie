@@ -1,6 +1,8 @@
 # Andie v6.4
 
-**What is Andie?** A disciplined thinking skill that runs a triad of named experts, an adversary, HITL gates, and an OODA loop until you have a decision.
+**What is Andie?** Andie turns your AI into a room of sharp advisors who argue, pressure-test your choice, and hand you a decision worth shipping.
+
+**Claude vs Andie:** With Claude alone, you get one voice agreeing with you. With Andie, you get a room that disagrees — until the right choices survive.
 
 **Why Andie?** You review code before shipping — Andie does the same for decisions, so high-stakes calls get pressure-tested before you commit.
 
