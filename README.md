@@ -12,7 +12,7 @@ Runs on Claude Code, Claude.ai, ChatGPT, Gemini, Perplexity, Copilot, Grok, Manu
 
 ## How to Install Andie
 
-- **Claude Code (one line):** `npx andie-skill` — installs the skill, then say "andie".
+- **Claude Code:** `npx andie-skill` — installs the skill. Restart Claude and `/andie` to begin.
 - **Claude.ai / Claude Desktop:** download [`dist/andie.skill`](dist/andie.skill) and upload it as a skill.
 - **ChatGPT, Gemini, Perplexity, Copilot, Grok, Manus, or any LLM:** copy the matching file from [`dist/`](dist/) into the platform's system prompt — see [`dist/README.md`](dist/README.md) for the per-platform paste target.
 - **Plain link install:** share `https://github.com/giggsoinc/andie` — every install path lives in this one repo.
