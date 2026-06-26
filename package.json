@@ -29,7 +29,6 @@
     "bin/",
     "skills/",
     "dist/",
-    "SKILL.md",
     "README.md"
   ]
 }

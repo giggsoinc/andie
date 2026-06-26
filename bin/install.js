@@ -1,30 +1,40 @@
 #!/usr/bin/env node
 /**
- * Andie installer — copies the Andie skill into the user's Claude Code skills dir.
+ * Andie installer — copies the full Andie skill bundle into the user's Claude Code skills dir.
  * Usage:  npx andie-skill
- * Safe to re-run; never overwrites without backing up an existing install.
+ * Safe to re-run; backs up any existing install before overwriting.
  */
 const fs = require("fs");
 const path = require("path");
 const os = require("os");
 
-const SRC = path.join(__dirname, "..", "skills", "andie", "SKILL.md");
+const SRC_DIR = path.join(__dirname, "..", "skills", "andie");
 const DEST_DIR = path.join(os.homedir(), ".claude", "skills", "andie");
-const DEST = path.join(DEST_DIR, "SKILL.md");
+
+function copyRecursive(src, dest) {
+  const stat = fs.statSync(src);
+  if (stat.isDirectory()) {
+    fs.mkdirSync(dest, { recursive: true });
+    for (const entry of fs.readdirSync(src)) {
+      copyRecursive(path.join(src, entry), path.join(dest, entry));
+    }
+  } else {
+    fs.copyFileSync(src, dest);
+  }
+}
 
 function main() {
-  if (!fs.existsSync(SRC)) {
+  if (!fs.existsSync(path.join(SRC_DIR, "SKILL.md"))) {
     console.error("Andie: could not find skills/andie/SKILL.md in the package.");
     process.exit(1);
   }
-  fs.mkdirSync(DEST_DIR, { recursive: true });
-  if (fs.existsSync(DEST)) {
-    const backup = DEST + ".bak-" + Date.now();
-    fs.copyFileSync(DEST, backup);
-    console.log("Andie: backed up existing skill ->", backup);
+  if (fs.existsSync(DEST_DIR)) {
+    const backup = DEST_DIR + ".bak-" + Date.now();
+    fs.renameSync(DEST_DIR, backup);
+    console.log("Andie: backed up existing skill -> " + backup);
   }
-  fs.copyFileSync(SRC, DEST);
-  console.log("Andie installed -> " + DEST);
+  copyRecursive(SRC_DIR, DEST_DIR);
+  console.log("Andie installed -> " + DEST_DIR);
   console.log('Open Claude Code and say "andie" to start.');
 }
 

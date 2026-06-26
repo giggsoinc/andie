@@ -1,3 +1,6 @@
 .raven/
 .DS_Store
+.model.env
+.claude/
 ANDIE_GROWTH_HANDSHAKE.md
+node_modules/
